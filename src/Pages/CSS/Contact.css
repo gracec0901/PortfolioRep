@@ -1,0 +1,19 @@
+.contact{
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+    gap: 2rem;
+}
+
+.contactHeading{
+    text-align: center;
+}
+.email{
+    font-size: 4.4rem;
+}
+
+.contactSocials{
+    grid-template-columns: 1fr 1fr;
+}
+
