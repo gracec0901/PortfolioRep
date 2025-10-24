@@ -1,22 +1,35 @@
 import './CSS/Contact.css';
+import ContactForm from '../Components/ContactForm';
+
+
 
 function Contact() {
 
     return (
     <section className='contact'>
-        <div className='contactHeading'>
-        <h1>Get in Touch!</h1>
-        <h3><a className='email' href="mailto:graceclehanemedia@gmail.com">graceclehanemedia@gmail.com</a></h3>
+    <div className='container'>
+            <div className='contactHeading'>
+            <h1>LETS CHAT!</h1>
+            </div>
+        <div className='contactSocials'>
+            <div className='socials'>
+            <ul>
+                <li><h3><a href="mailto:graceclehanemedia@gmail.com">[graceclehanemedia@gmail.com]</a></h3></li>
+                <li><h3><a href="https://www.linkedin.com/in/grace-clehane-85a66922b/">[LinkedIn]</a></h3></li>
+                <li><h3><a href="https://www.instagram.com/graceclehanemedia/">[Instagram]</a></h3></li>
+            </ul>
+            </div>
         </div>
-    <div className='contactSocials'>
-        <p>Please don't hesitate to contact me with any queries!</p>
-        <div className='socials'>
-        <p><a href="https://www.linkedin.com/in/grace-clehane-85a66922b/">LinkedIn</a></p>
-        <p><a href="https://www.instagram.com/graceclehanemedia/">Instagram</a></p>
+
+        <div className='contactFormWrapper'>
+          <ContactForm />
         </div>
+
+
     </div>
     </section>
     );
 }
 
 export default Contact;
+

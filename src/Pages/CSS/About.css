@@ -8,10 +8,32 @@
     max-width: 1200px;
     margin: 4rem auto;
     padding: 0 1.5rem;
+    text-align: left;
 }
 
 .aboutBasic p{
   padding-top: 1rem;
+}
+
+.aboutTitle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-90%, 50%);
+}
+
+.aboutParallax {
+  width: 100%;
+  min-height: 500px;
+  margin: 0;
+  padding: 0;
+  background-image: url("/Placeholders/Placeholder.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10rem;
+  position: relative;
 }
 
 
@@ -29,11 +51,11 @@
 
 .collapsible {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   align-items: start;
   border-radius: 2px;
   font-size: 1.6rem;
   overflow: hidden;
+  border-color: #0d0d0d;
 }
 
 .collapsible summary {
@@ -47,6 +69,7 @@
   text-transform: uppercase;
   font-size: 3rem;
   position: relative;
+  text-align: left;
 }
 
 .collapsible h3{
@@ -54,26 +77,37 @@
 }
 
 .collapsible[open] {
-  color: white ;
+  color: #EFEAE4 ;
   background-color: #0d0d0d;
 }
 
 .collapsible[open] summary{
-  color: white ;
+  color: #EFEAE4 ;
   background-color: #0d0d0d;
 }
 
 .collapsible :hover{
   background-color: #0d0d0d;
-  color: white;
+  color: #EFEAE4;
 }
 
 .collapsibleContent {
-  grid-row: 1 / span 1;
-  padding: 2rem;
-  font-size: 1.6rem;
   line-height: 1.6;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+    text-align: left;
+    list-style-type: none;
 }
+
+.collapsibleContent ul{
+  list-style-type: none;
+}
+
 
 .summaryToggle {
   font-size: 5rem;

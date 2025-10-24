@@ -1,4 +1,4 @@
-.projectOne, .projectTwo {
+.projectCont  {
     display: grid;
     flex-wrap: wrap;
     grid-template-columns: 1fr 1fr 1fr;
@@ -9,7 +9,7 @@
     text-align: left;
 }
 
-.projectButtonOne, .projectButtonTwo,  .projectButtonThree {
+.projectButtonOne, .projectButtonTwo,  .projectButtonThree, .projectButtonFour, .projectButtonFive {
     font-size: 5rem;
     font-weight: bolder;
     text-align: right;
@@ -35,6 +35,20 @@
 }
 .projectButtonThree:hover {
   background-image: url('/Placeholders/project3placeholder.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: white; 
+}
+
+.projectButtonFour:hover {
+  background-image: url('/Images/PhotographyHero.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white; 
+}
+
+.projectButtonFive:hover {
+  background-image: url('/Images/VideographyHero.jpg');
   background-size: cover;
   background-position: center;
   color: white; 

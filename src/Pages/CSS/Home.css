@@ -12,19 +12,20 @@
 
 .hero {
   padding: 4rem 2rem;
-  background-color: white;
   margin-bottom: 2rem;
 }
 
 .h1hero{
   text-align: center;
-  font-size: 8.5rem;
+  font-size: 9.7rem;
 }
 
 /*.highlightText{
   background-color: #FF8000;
   padding: 0em;
 }*/
+
+/*About Section*/
 
 .abouthome {
   margin-bottom: 2rem;
@@ -36,7 +37,7 @@
 
 .aboutgrid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 0.5fr 1fr;
   gap: 2rem;
   max-width: 1200px;
   margin: 4rem auto;
@@ -48,7 +49,31 @@
   text-align: left;
 }
 
+.aboutlink :hover{
+  color: #888;
+}
+
 /*Project Section*/
+
+.workHeading{
+  font-size: 18.75rem;
+}
+
+.workHomeHeader{
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr;
+  align-items:baseline;
+  gap: 2rem;
+}
+
+.workBtn{
+  font-size:15rem;
+  font-weight: bolder;
+  font-family: 'BBH Sans Hegarty', sans-serif;
+  text-align: right;
+}
+
 .project1image, .project2image, .project3image{
   width:420px;
   height: 600px;
@@ -91,4 +116,102 @@
   float:right;
   color: black;
   padding-top: 10px;
+}
+
+.projectGallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 0;
+  width: 100%;
+}
+
+.projectImageClick {
+  width: 100%;
+  max-width: 1600px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 2px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectImageClick:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+}
+
+.projectImageClick img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease;
+}
+
+.projectImageClick:hover img {
+  transform: scale(1.05);
+}
+
+.projectImageClick img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.projectImageClick a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.projectImageClick img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+
+.projectImageClick {
+  z-index: 10;
+}
+
+.imageOverlayContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.overlayText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #EFEAE4;
+  display: flex;
+  font-family: 'BBH Sans Hegarty', sans-serif;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  font-size: 4.5rem;
+  line-height: 5rem;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.imageOverlayContainer:hover .overlayText {
+  opacity: 1;
 }

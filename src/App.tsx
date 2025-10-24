@@ -6,6 +6,7 @@ import {Routes, Route} from 'react-router-dom';
 import mediaLogo from'./assets/IMG_0557.png';
 import './App.css';
 
+
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Project from './Pages/Project';
@@ -13,10 +14,13 @@ import Contact from './Pages/Contact';
 import ProjectOne from './Pages/Projectone';
 import ProjectTwo from './Pages/Projecttwo';
 import ProjectThree from './Pages/Projectthree';
+import Photography from './Pages/Photography';
+import Videography from './Pages/Videography';
 
 function App() {
   return(
   
+ 
   <div className="index">
     <header className="header">
       <nav>
@@ -24,13 +28,12 @@ function App() {
         <Link to="/" id="home"><img src={mediaLogo} alt="Media Logo" className="logo react-logo"></img></Link>
       </div>
       <ul className='navBar'>
-        <li><Link to="/Contact">contact</Link></li>
-        <li><Link to="/Project">work</Link></li>
-        <li><Link to="/About">about</Link></li>
+        <li><Link to="/Contact" className='navItem'>contact</Link></li>
+        <li><Link to="/Project" className='navItem'>work</Link></li>
+        <li><Link to="/About" className='navItem'>about</Link></li>
       </ul>
       </nav>
     </header>
-    
 
     <Routes>
       <Route path="/" element={<Home />} />
@@ -40,6 +43,8 @@ function App() {
       <Route path="/Projectone" element={<ProjectOne />} />
       <Route path="/Projecttwo" element={<ProjectTwo />} />
       <Route path="/Projectthree" element={<ProjectThree />} />
+      <Route path="/Photography" element={<Photography />} />
+      <Route path="/Videography" element={<Videography />} />
     </Routes>
  
     <footer className="footer">
@@ -54,7 +59,7 @@ function App() {
         </div>
 
         <div className="footer-center">
-        <Link to="/" id="home"><img src={mediaLogo} alt="Media Logo" className="logo react-logo"></img></Link>
+        <Link to="/" id="home"><img src={mediaLogo} alt="Media Logo" className="footer-logo"></img></Link>
         <p className="footerDate">&copy; {new Date().getFullYear()} Grace Clehane. All Rights Reserved.</p>
         </div>
 
@@ -70,6 +75,7 @@ function App() {
     </footer>
 
   </div>
+
   );
 }
 

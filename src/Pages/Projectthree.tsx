@@ -1,40 +1,50 @@
 import './CSS/Projectthree.css';
-import Placeholder from '/Placeholders/Placeholder.png';
+import PhotographyHero from '/Images/PhotographyHero.jpg';
 import { Link } from 'react-router-dom';
 
 function Projectthree() {
 return(
 <section className="projecthero">
-<h1>Interaction and Experience Design</h1>
-
-<div className='projectIntro'>
-<h3 className='projectIntroLeft'>[University of Limerick]</h3>
-<h3 className='projectIntroCentre'>[2025]</h3>
-<h3 className='projectIntroRight'>[Masters]</h3>
+    <div className='index'>
+<div className='titleParallax'>
+    <div className='titleOverlay'>
+    <h1>Interaction & Experience Design</h1>
+        <div className='projectIntro'>
+        <h3 className='projectIntroLeft'>[University of Limerick]</h3>
+        <h3 className='projectIntroCentre'>[2025]</h3>
+        <h3 className='projectIntroRight'>[Masters]</h3>
+        </div>
+    </div>
 </div>
 
 <div className='projectDescription'>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, asperiores quam veniam distinctio dolorum quidem officia temporibus maxime provident aliquid ut cupiditate libero impedit aut, in odit, illum quaerat nisi?</p>
-    <div className='furtherText'>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quisquam illum optio repellendus ipsum inventore atque placeat, rem dolore labore, voluptatibus nesciunt officiis! Illo totam eaque provident illum. Quibusdam, atque?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quisquam illum optio repellendus ipsum inventore atque placeat, rem dolore labore, voluptatibus nesciunt officiis! Illo totam eaque provident illum. Quibusdam, atque?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quisquam illum optio repellendus ipsum inventore atque placeat, rem dolore labore, voluptatibus nesciunt officiis! Illo totam eaque provident illum. Quibusdam, atque?</p>
-    </div><img src={Placeholder} alt="placeholder" className="p3placeholder1"></img>
-    
+    <div className='firstText'>
+        <ul className='skillList'>
+            <h3>[Software]</h3>
+            <li>Visual Studio Code</li>
+            <li>Adobe Creative Suite</li> 
+            <li>Arduino IDE</li>
+            <h3>[Skills]</h3>
+            <li>Interaction Design</li>
+            <li>User Experience</li>
+            <li>Physical Computing</li>
+        </ul>
+
+    <p>I have begun my Masters of Science in Interaction and Experience Design at the University of Limerick. I decided to pursue further education in this area as I have always found how we interact technology very interesting and I enjoy wondering how do we make those experiences better.</p>
+    </div>
+
 </div>
 
-<h1 className='slogan'>"Quote"</h1>
 
-<div className='projectFurther'>
-    <p className='furtherText1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quisquam illum optio repellendus ipsum inventore atque placeat, rem dolore labore, voluptatibus nesciunt officiis! Illo totam eaque provident illum. Quibusdam, atque?</p>
-    <p className='furtherText2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quisquam illum optio repellendus ipsum inventore atque placeat, rem dolore labore, voluptatibus nesciunt officiis! Illo totam eaque provident illum. Quibusdam, atque?</p><img src={Placeholder} alt="placeholder1" className="placeholder2"></img>
+<div className='projectImageClick'>
+    <Link to="/Photography">
+      <div className="imageOverlayContainer">
+        <img src={PhotographyHero} alt="PhotographyHero" className="projectImage" />
+        <div className="overlayText">Photography</div>
+      </div>
+    </Link>
+  </div>
 </div>
-
-<img src={Placeholder} alt="placeholder" className="p3placeholder3"></img>
-
-
-<Link to='/Project' ><h2 className='nextprojectBtn'>Back to Work</h2></Link>
-
 </section>
 );
 }
