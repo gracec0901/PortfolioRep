@@ -2,8 +2,8 @@ import './CSS/Home.css';
 import placeholder1 from'/Placeholders/project1placeholder.png';
 import placeholder2 from'/Placeholders/project2placeholder.png';
 import placeholder3 from'/Placeholders/project3placeholder.jpeg';
-import PhotographyHero from '/Images/PhotographyHero.jpg';
-import VideographyHero from '/Images/VideographyHero.jpg';
+import PhotographyHero from '/Images/Photography/PhotographyHero.jpg';
+import VideographyHero from '/Images/Videography/VideographyHero.jpg';
 import { Link } from 'react-router-dom';
 
 
@@ -32,67 +32,65 @@ function Home() {
         </div>
       </section>
       </div>
-      
+    
 
-
-  <section className="projects">
+<section className="projects">
         
     <div className='workHomeHeader'>
-    <h1 className='workHeading'>Work</h1>
-    <Link to="/Project" className="workBtn">+</Link>
+      <h1 className='workHeading'>Work</h1>
+      <Link to="/Project" className="workBtn">+</Link>
     </div>
 
-<div className='projectGallery'>
-  <div className='projectImageClick'>
-    <Link to="/Projectone">
-      <div className="imageOverlayContainer">
-        <img src={placeholder1} alt="placeholder1" className="projectImage" />
-        <div className="overlayText">Urban Notes</div>
+  <div className='projectGallery'>
+      <div className='projectImageClick'>
+        <Link to="/Projectone">
+          <div className="imageOverlayContainer">
+            <img src={placeholder1} alt="placeholder1" className="projectImage" />
+            <div className="overlayText">Urban Notes</div>
+          </div>
+        </Link>
       </div>
-    </Link>
-  </div>
 
-  <div className='projectImageClick'>
-    <Link to="/Projecttwo">
-      <div className="imageOverlayContainer">
-        <img src={placeholder2} alt="placeholder2" className="projectImage" />
-        <div className="overlayText">Immersive Design</div>
+      <div className='projectImageClick'>
+        <Link to="/Projecttwo">
+          <div className="imageOverlayContainer">
+            <img src={placeholder2} alt="placeholder2" className="projectImage" />
+            <div className="overlayText">Immersive Design</div>
+          </div>
+        </Link>
       </div>
-    </Link>
-  </div>
 
-  <div className='projectImageClick'>
-    <Link to="/Projectthree">
-      <div className="imageOverlayContainer">
-        <img src={placeholder3} alt="placeholder3" className="projectImage" />
-        <div className="overlayText">Interaction & Experience Design</div>
+      <div className='projectImageClick'>
+        <Link to="/Projectthree">
+          <div className="imageOverlayContainer">
+            <img src={placeholder3} alt="placeholder3" className="projectImage" />
+            <div className="overlayText">Interaction & Experience Design</div>
+          </div>
+        </Link>
       </div>
-    </Link>
-  </div>
 
-    <div className='projectImageClick'>
-    <Link to="/Photography">
-      <div className="imageOverlayContainer">
-        <img src={PhotographyHero} alt="PhotographyHero" className="projectImage" />
-        <div className="overlayText">Photography</div>
+        <div className='projectImageClick'>
+        <Link to="/Photography">
+          <div className="imageOverlayContainer">
+            <img src={PhotographyHero} alt="PhotographyHero" className="projectImage" />
+            <div className="overlayText">Photography</div>
+          </div>
+        </Link>
       </div>
-    </Link>
-  </div>
 
-    <div className='projectImageClick'>
-    <Link to="/Videography">
-      <div className="imageOverlayContainer">
-        <img src={VideographyHero} alt="VideographyHero" className="projectImage" />
-        <div className="overlayText">Video Production</div>
+        <div className='projectImageClick'>
+        <Link to="/Videography">
+          <div className="imageOverlayContainer">
+            <img src={VideographyHero} alt="VideographyHero" className="projectImage" />
+            <div className="overlayText">Video Production</div>
+          </div>
+        </Link>
       </div>
-    </Link>
   </div>
-
-</div>
  
       
     
-  </section>
+</section>
 
       
     </main>

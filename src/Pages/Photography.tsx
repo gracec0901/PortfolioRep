@@ -1,6 +1,8 @@
-import VideographyHero from '/Images/VideographyHero.jpg';
+import VideographyHero from '/Images/Videography/VideographyHero.jpg';
+import Placeholder from '/Placeholders/Placeholder.png';
 import { Link } from 'react-router-dom';
 import './CSS/Projectone.css';
+import './CSS/Photography.css';
 import './CSS/Home.css';
 
 function Photography(){
@@ -12,12 +14,19 @@ function Photography(){
     <div className='titleOverlay'>
     <h1>Photography</h1>
         <div className='projectIntro'>
-        <h3 className='projectIntroLeft'>[Munster Technological University]</h3>
-        <h3 className='projectIntroCentre'>[2024]</h3>
-        <h3 className='projectIntroRight'>[Final Year Project]</h3>
+        <h3 className='projectIntroLeft'>[Collection]</h3>
+        <h3 className='projectIntroCentre'>[2020 - 2025]</h3>
+        <h3 className='projectIntroRight'>[Images]</h3>
         </div>
     </div>
 </div>
+
+
+<div className='imagesTrio'>
+    <img src={Placeholder} alt="UNPortfolio" className='UNPortfolio'></img>
+    <img src={Placeholder} alt="UNPoster" className='UNPoster'></img>
+    <img src={Placeholder} alt="UNDisplay" className='UNDisplay'></img>
+    </div>
 
 
 

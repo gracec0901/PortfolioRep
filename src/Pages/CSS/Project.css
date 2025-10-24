@@ -41,15 +41,19 @@
 }
 
 .projectButtonFour:hover {
-  background-image: url('/Images/PhotographyHero.jpg');
+  background-image: url('/Images/Photography/PhotographyHero.jpg');
   background-size: cover;
   background-position: center;
   color: white; 
 }
 
 .projectButtonFive:hover {
-  background-image: url('/Images/VideographyHero.jpg');
+  background-image: url('/Images/Videography/VideographyHero.jpg');
   background-size: cover;
   background-position: center;
   color: white; 
+}
+
+.projectCont h4{
+  font-size: 1.85rem;
 }

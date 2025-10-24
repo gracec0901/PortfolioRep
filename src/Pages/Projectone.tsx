@@ -48,7 +48,8 @@ return(
     <img src={UNPortfolio} alt="UNPortfolio" className='UNPortfolio'></img>
     <img src={UNPoster} alt="UNPoster" className='UNPoster'></img>
     <img src={UNDisplay} alt="UNDisplay" className='UNDisplay'></img>
-</div>
+    </div>
+    
 <h1 className='slogan'>"Explore, Engage, Create"</h1>
     <div className='furtherText'>
         

@@ -1,5 +1,5 @@
 import './CSS/Projectthree.css';
-import PhotographyHero from '/Images/PhotographyHero.jpg';
+import PhotographyHero from '/Images/Photography/PhotographyHero.jpg';
 import { Link } from 'react-router-dom';
 
 function Projectthree() {
