@@ -4,7 +4,6 @@ import placeholder2 from'/Placeholders/project2placeholder.png';
 import placeholder3 from'/Placeholders/project3placeholder.jpeg';
 import PhotographyHero from '/Images/Photography/PhotographyHero.jpg';
 import VideographyHero from '/Images/Videography/VideographyHero.jpg';
-import CCHero from '/Images/ContentCreation/CCHero.jpeg';
 import PassionImage from '/Images/Photography/PassionImage.jpg';
 import { Link } from 'react-router-dom';
 
@@ -74,7 +73,7 @@ function Home() {
       <div className='projectImageClick'>
         <Link to="/Contentcreation">
           <div className="imageOverlayContainer">
-            <img src={CCHero} alt="ContentCHero" className="projectImage" />
+            <img src={PhotographyHero} alt="ContentCHero" className="projectImage" />
             <div className="overlayText">Content Creation</div>
           </div>
         </Link>

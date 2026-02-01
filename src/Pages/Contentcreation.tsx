@@ -1,7 +1,7 @@
 import './CSS/Videography.css';
 import { Link } from 'react-router-dom';
 import PhotographyHero from '/Images/Photography/PhotographyHero.jpg';
-import placeholder1 from'/Placeholders/project1placeholder.png';
+import placeholder3 from'/Placeholders/project3placeholder.jpeg';
 import './CSS/Projectone.css';
 import './CSS/Photography.css';
 import './CSS/Home.css';
@@ -48,14 +48,14 @@ function Videography(){
                 <Link to="/Photography">
                     <div className="nav-item left">
                         <span className="nav-label">← Previous project</span>
-                        <img src={PhotographyHero} alt="Previous Project" className="nav-image" />
+                        <img src={placeholder3} alt="Previous Project" className="nav-image" />
                     </div>
                 </Link>
 
                 <Link to="/Projectone">
                     <div className="nav-item right">
                         <span className="nav-label">Next project →</span>
-                        <img src={placeholder1} alt="Next Project" className="nav-image" />
+                        <img src={PhotographyHero} alt="Next Project" className="nav-image" />
                     </div>
                 </Link>
             </div>
