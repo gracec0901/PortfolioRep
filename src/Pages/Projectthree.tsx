@@ -5,7 +5,7 @@ import './CSS/Photography.css';
 import './CSS/Home.css';
 import PhotographyHero from '/Images/Photography/PhotographyHero.jpg';
 import placeholder2 from'/Placeholders/project2placeholder.png';
-import PCVideo from '/Images/Project Three/PCVideo.mp4';
+
 import { Link } from 'react-router-dom';
 
 function Projectthree() {
@@ -42,8 +42,7 @@ return(
 </div>
 
         <div className="Video">
-            <video className="video-play" src={PCVideo} controls >
-                Your browser does not support the video tag. </video>
+            <iframe width="951" height="535" src="https://www.youtube.com/embed/lgF9-0jpxoI" title="PCVideo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
     <div className="project-nav">

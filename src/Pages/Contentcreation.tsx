@@ -2,10 +2,6 @@ import './CSS/Videography.css';
 import { Link } from 'react-router-dom';
 import PhotographyHero from '/Images/Photography/PhotographyHero.jpg';
 import placeholder1 from'/Placeholders/project1placeholder.png';
-import DepopVideo from '/Images/ContentCreation/DepopMTU.mp4'; 
-import StudentVideo from '/Images/ContentCreation/StudentMTU.mov';
-import InterviewVideo from '/Images/ContentCreation/InterviewMTU.mov';
-import Thumbnail from '/Images/ContentCreation/Thumbnail.png';
 import './CSS/Projectone.css';
 import './CSS/Photography.css';
 import './CSS/Home.css';
@@ -31,19 +27,16 @@ function Videography(){
 
                 <div className='contentVideos'>
                     <div className='ccvid'>
-                        <video className="CCvideo" src={DepopVideo} controls>
-                                Your browser does not support the video tag. </video>
+                        <iframe width="337" height="599" src="https://www.youtube.com/embed/_U2d_8n0Nlo" title="StudentMTU" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                     </div>
 
                     
                     <div className='ccvid'>
-                        <video className="CCvideo" src={StudentVideo} controls >
-                                Your browser does not support the video tag. </video>
+                        <iframe width="337" height="599" src="https://www.youtube.com/embed/ofCKqdgmMZ0" title="DepopMTU" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                     </div>
 
                     <div className='ccvid'>
-                        <video className="CCvideo" src={InterviewVideo} controls poster={Thumbnail}>
-                                Your browser does not support the video tag. </video>
+                        <iframe width="337" height="599" src="https://www.youtube.com/embed/3WSWEyMppbk" title="InterviewMTU" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                     </div>
 </div>
 

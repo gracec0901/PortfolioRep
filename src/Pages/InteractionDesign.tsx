@@ -2,7 +2,6 @@ import './CSS/Videography.css';
 import { Link } from 'react-router-dom';
 import PhotographyHero from '/Images/Photography/PhotographyHero.jpg';
 import placeholder2 from'/Placeholders/project2placeholder.png';
-import PCVideo from '/Images/ProjectThree/PCVideo.mp4'; 
 import './CSS/Projectone.css';
 import './CSS/Photography.css';
 import './CSS/Home.css';
@@ -41,8 +40,7 @@ function InteractionDesign(){
 </div>
                         <h2>Physical Computing</h2>
                         <div className="Video">
-                            <video className="video-play" src={PCVideo} controls >
-                                Your browser does not support the video tag. </video>
+                                <iframe width="951" className="video-play" height="535" src="https://www.youtube.com/embed/lgF9-0jpxoI" title="PCVideo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                         </div>
                 </div>
             </div>
