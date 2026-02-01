@@ -1,0 +1,66 @@
+.projectCont  {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+    text-align: left;
+}
+
+.projectButtonOne, .projectButtonTwo,  .projectButtonThree, .projectButtonFour, .projectButtonFive, .projectButtonSix {
+    font-size: 5rem;
+    font-weight: bolder;
+    text-align: right;
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    color: black;
+    transition: background-image 0.3s ease;
+}
+
+.projectButtonOne:hover {
+  background-image: url('/Placeholders/project1placeholder.png');
+  background-size: cover;
+  background-position: center;
+  color: white; 
+}
+
+.projectButtonTwo:hover {
+  background-image: url('/Placeholders/project2placeholder.png');
+  background-size: cover;
+  background-position: center;
+  color: white; 
+}
+.projectButtonThree:hover {
+  background-image: url('/Placeholders/project3placeholder.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: white; 
+}
+
+.projectButtonFour:hover {
+  background-image: url('/Images/Photography/PassionImage.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white; 
+}
+
+.projectButtonFive:hover {
+  background-image: url('/Images/Videography/VideographyHero.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white; 
+}
+
+.projectButtonSix:hover {
+  background-image: url('/Images/Photography/PhotographyHero.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white; 
+}
+
+.projectCont h4{
+  font-size: 1.85rem;
+}

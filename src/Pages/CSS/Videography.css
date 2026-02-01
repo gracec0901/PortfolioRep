@@ -1,0 +1,38 @@
+.Video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.video-player {
+  width: 100%;
+  max-width: 1200px;   /* or whatever max size you want */
+  aspect-ratio: 16 / 9; 
+  object-fit: cover;   /* fills the 16:9 box consistently */
+  display: block;
+  border: none;
+  background: black;   /* optional */
+}
+
+.VideoImage {
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+    margin: 4rem auto;
+  padding: 0 1.5rem;
+}
+
+.filmingImages {
+  display: flex;        
+  flex-direction: row;
+  gap: 16px;              
+  align-items: center;    
+}
+
+.filmingImages img {
+  width: 100%;
+  max-width: 50px;  
+  height: auto;
+  object-fit: cover;      
+}

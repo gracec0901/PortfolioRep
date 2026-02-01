@@ -1,0 +1,148 @@
+
+.aboutBasic {
+    line-height: 1.6;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+    text-align: left;
+}
+
+.aboutBasic p{
+  padding-top: 1rem;
+}
+
+.aboutTitle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-90%, 50%);
+}
+
+.aboutParallax {
+  width: 100%;
+  min-height: 500px;
+  margin: 0;
+  padding: 0;
+  background-image: url("/Images/LogoGif.mp4");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10rem;
+  position: relative;
+}
+
+.aboutParallax {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  margin-top: 10rem;
+  overflow: hidden;
+}
+
+.videoBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/*Collapsible Education Section*/
+
+.educationSection{
+  display: flex;
+  max-width: 1200px;
+  gap: 2rem;
+  margin: 4rem auto;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+}
+
+.collapsible {
+  display: grid;
+  align-items: start;
+  border-radius: 2px;
+  font-size: 1.6rem;
+  overflow: hidden;
+  border-color: #0d0d0d;
+}
+
+.collapsible summary {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 4rem 2rem;
+  font-family: 'BBH Sans Hegarty', sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  position: relative;
+  text-align: left;
+}
+
+.collapsible h3{
+  font-size: 2rem;
+}
+
+.collapsible[open] {
+  color: #EFEAE4 ;
+  background-color: #0d0d0d;
+}
+
+.collapsible[open] summary{
+  color: #EFEAE4 ;
+  background-color: #0d0d0d;
+}
+
+.collapsible :hover{
+  background-color: #0d0d0d;
+  color: #EFEAE4;
+}
+
+.collapsibleContent {
+  line-height: 1.6;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+    text-align: left;
+    list-style-type: none;
+}
+
+.collapsibleContent ul{
+  list-style-type: none;
+}
+
+
+.summaryToggle {
+  font-size: 5rem;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  color: inherit;
+}
+
+.collapsible:not([open]) .summaryToggle::before {
+  content: "+";
+  transition: transform 3s ease;
+}
+
+.collapsible[open] .summaryToggle::before {
+  content: "–";
+}
+
+
