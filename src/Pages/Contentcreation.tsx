@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import PhotographyHero from '/Images/Photography/PhotographyHero.jpg';
 import placeholder1 from'/Placeholders/project1placeholder.png';
 import DepopVideo from '/Images/ContentCreation/DepopMTU.mp4'; 
-//import StudentVideo from '/Images/ContentCreation/StudentMTU.mov';
+import StudentVideo from '/Images/ContentCreation/StudentMTU.mov';
 import InterviewVideo from '/Images/ContentCreation/InterviewMTU.mov';
 import Thumbnail from '/Images/ContentCreation/Thumbnail.png';
 import './CSS/Projectone.css';
@@ -37,7 +37,7 @@ function Videography(){
 
                     
                     <div className='ccvid'>
-                        <video className="CCvideo" src={DepopVideo} controls >
+                        <video className="CCvideo" src={StudentVideo} controls >
                                 Your browser does not support the video tag. </video>
                     </div>
 
