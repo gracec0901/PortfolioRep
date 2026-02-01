@@ -2,7 +2,7 @@ import './CSS/Videography.css';
 import { Link } from 'react-router-dom';
 import PhotographyHero from '/Images/Photography/PhotographyHero.jpg';
 import placeholder1 from'/Placeholders/project1placeholder.png';
-import IMVideo from '/Images/Videography/IMVideo.mp4'; 
+import IMVideo from '../Images/Videography/IMVideo.mp4'; 
 import GroupImage from '/Images/Videography/GroupImage.jpg';
 import DirectingImage from '/Images/Videography/DirectingImage.jpg';
 import ShootingImage from '/Images/Videography/ShootingImage.jpg';
