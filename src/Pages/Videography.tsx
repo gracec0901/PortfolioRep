@@ -2,7 +2,7 @@ import './CSS/Videography.css';
 import { Link } from 'react-router-dom';
 import PhotographyHero from '/Images/Photography/PhotographyHero.jpg';
 import placeholder1 from'/Placeholders/project1placeholder.png';
-import IMVideo from '/Images/Videography/IMVideo.mp4'; 
+//import IMVideo from '/Images/Videography/IMVideo.mp4'; 
 import GroupImage from '/Images/Videography/GroupImage.jpg';
 import DirectingImage from '/Images/Videography/DirectingImage.jpg';
 import ShootingImage from '/Images/Videography/ShootingImage.jpg';
@@ -28,8 +28,7 @@ function Videography(){
                     </div>
 
                         <div className="Video">
-                            <video className="video-play" src={IMVideo} controls >
-                                Your browser does not support the video tag. </video>
+                            <iframe width="951" height="535" src="https://www.youtube.com/embed/hGXjlXMoMAo" title="Coffee Advert Interactive Media" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                         </div>
 
                    <div className='projectDescription'>
