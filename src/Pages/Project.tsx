@@ -7,6 +7,13 @@ function Project() {
     return (
     <section className="projects">
     <div className='container'>
+
+        <div className="projectCont">
+        <h4>Interactive Media</h4>
+        <p>Project work for the Interactive media module 2026.</p>
+        <Link to="/Interactive Media" className="projectButtonSeven">+</Link>
+        </div>
+
         <div className="projectCont">
         <h4>Urban Notes</h4>
         <p>An application allowing the user to explore their cities’ art and culture through the use of augmented reality. By using their mobile phone, users can add their own virtual note onto the piece of art and through premade AR stories, they can see the stories behind the art and artists come to life.</p>

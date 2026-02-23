@@ -2,6 +2,7 @@ import './CSS/Home.css';
 import placeholder1 from'/Placeholders/project1placeholder.png';
 import placeholder2 from'/Placeholders/project2placeholder.png';
 import placeholder3 from'/Placeholders/project3placeholder.jpeg';
+import IMHero from '/Images/Interactivemedia/IMHero.jpeg';
 import PhotographyHero from '/Images/Photography/PhotographyHero.jpg';
 import VideographyHero from '/Images/Videography/VideographyHero.jpg';
 import PassionImage from '/Images/Photography/PassionImage.jpg';
@@ -43,6 +44,17 @@ function Home() {
     </div>
 
   <div className='projectGallery'>
+
+    <div className='projectImageClick'>
+        <Link to="/InteractiveMedia">
+          <div className="imageOverlayContainer">
+            <img src={IMHero} alt="IMHero" className="projectImage" />
+            <div className="overlayText">Interactive Media</div>
+          </div>
+        </Link>
+      </div>
+
+
       <div className='projectImageClick'>
         <Link to="/Projectone">
           <div className="imageOverlayContainer">
