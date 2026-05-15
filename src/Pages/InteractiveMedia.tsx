@@ -33,7 +33,7 @@ function InteractiveMedia(){
 
                    <div className='projectDescription'>
                     <div className='firstText'>
-                        <h2>UN Sustainable Development Goal 12</h2>
+                        <h3>[UN Sustainable Development Goal 12]</h3>
                     
                     </div>
 
@@ -44,22 +44,27 @@ function InteractiveMedia(){
 
                      
                     <div className='videoText'>
-                        
                         <img src={FlowDiagram} alt="BTSImage" className='VideoImage'></img>
-                        
-
-                        
+                                 
                         <div className="scroll-container">
                         <img src={Drawing1} alt="DirectingImage" className='VideoImage'></img>
                         <img src={Drawing2} alt="ShootingImage" className='VideoImage'></img>
                         <img src={Drawing3} alt="Brainstorm" className='VideoImage'></img>
                         </div>
-                      
-                        
-
-                        <img src={GroupImage} alt="GroupImage" className='VideoImage'></img>
-
+                
                     </div>
+
+
+                    <h3 className='projectIntroLeft'>[Music Performance]</h3>
+                    <div className='Video'>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/TO5h-MrgqWo?si=9Vu84sqiXqiZ-Rce" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <h3 className='projectIntroLeft'>[Modular Sculpture]</h3>
+                    <div className="Video">
+                        
+                            <iframe width="337" height="599" src="https://www.youtube.com/embed/-zKygFpbFEo" title="CS6042 Final Video by Roslyn Shaw-Kelly, Grace Clehane and Roisin Mohally" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
                 </div>
             </div>
 
